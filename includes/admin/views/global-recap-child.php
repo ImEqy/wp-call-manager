@@ -6,23 +6,31 @@
  * @subpackage Call & Blame.
  *
  */
-$call = 5;
-$blame = 6;
+	?>
+
+	<div class="rTable">
+				 <div class="rTableRow" style="">
+				 <div class="rTableName"><strong><?php echo esc_html( $nom_util );?>
+				 </strong></div>
+
+	<div class="rTableDay">
+<?php
 $days = date( 't' );
 for ( $d = 1; ;$d++ ) {
 	if ( $d == $days ) {
 		break;
 	}
 ?>
-<div class="table" style="display: table;">
-	<div class="tableRow">
-			<?php esc_html( $d );?>
-			<?php echo esc_html( $total_blame ); ?>
-<div class="tableRow" style="display: table; text-align: center;">
-	<?php echo esc_html( $call );
-				echo esc_html( $blame );
-				?>
-</div>
-</div>
-</div>
+<div class="rTableHead" style="text-align: center;">
+				Jour <?php echo esc_html( $d ); ?>
+				<div class="rTableRow">
+					<span class="dashicons dashicons-phone"></span>
+					<span class="dashicons dashicons-businessman"></span>
+					<br>
+					<span><?php echo esc_html( $total_call ) ?></span> | <span><?php echo esc_html( x ) ?></span>
+			</div>
+					</div>
 <?php } ?>
+</div>
+</div>
+</div>

@@ -22,3 +22,55 @@
 	content: "\f460";
 	top: 3px;
 }
+.rTable {
+			  	display: flex;
+			  	width: 75%;
+
+			}
+			.rTableHeading, .rTableBody, .rTableFoot, .rTableRow{
+			  	clear: both;
+			}
+			.rTableHead, .rTableFoot{
+			  	background-color: #ffd9b3;
+			  	font-weight: bold;
+			}
+			.rTableCell, .rTableHead {
+			  	border: 1px solid #ff9933;
+			  	float: left;
+			  	height: 17px;
+			  	overflow: hidden;
+			  	padding: 10px 2.3%;
+			  	width: 5%;
+					padding-bottom: 4%;
+			}
+			.rTableName {
+				float: none;
+				height: 17px;
+				overflow: hidden;
+				padding-top: 3px;
+				padding-bottom: 3px;
+				text-align: center;
+				background-color: #ff8000;
+			}
+			.rTableIcons {
+				border: 1px;
+				float: left;
+				height: 17px;
+				overflow: hidden;
+				padding: 3px 1.8%;
+				width: 5%;
+			}
+			.rTableDay {
+				overflow: hidden;
+				float: none;
+				padding: 2.3%;
+
+			}
+			.rTable:after {
+			  	 visibility: hidden;
+			  	 display: block;
+			  	 font-size: 0;
+			  	 content: " ";
+			  	 clear: both;
+			  	 height: 0;
+			}
