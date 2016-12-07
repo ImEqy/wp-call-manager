@@ -6,14 +6,14 @@
 	 </div>
 	 <?php
 				$user_meta = get_user_meta( $user_id, 'imputation_' . $year . $month, true );
-				if ( '' === $user_meta ) {
+		if ( '' === $user_meta ) {
 					$id_select = get_users( 'orderby=nicename&role=administrator&exclude=' . $user_id . '' );
-					foreach ( $id_select as $user ) {
+			foreach ( $id_select as $user ) {
 						$ids[ $user->ID ] = 0;
 					}
 					$ids['0'] = 0;
 					$ids['999999'] = 0;
-					for ( $i = 1; $i <= 31; $i++ ) {
+			for ( $i = 1; $i <= 31; $i++ ) {
 						$imputation[ $i ] = array(
 								'call' => 0,
 								'blame' => $ids,
@@ -23,7 +23,7 @@
 					$user_meta = get_user_meta( $user_id, 'imputation_' . $year . $month, true );
 					$total_call = $user_meta[ $day ]['call'];
 				}
-			foreach ( $data_users as $data ) {
+		foreach ( $data_users as $data ) {
 				$user_id = $data->ID;
 				$nom_util = $data->display_name;
 			 	?>
