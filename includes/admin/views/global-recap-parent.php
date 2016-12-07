@@ -5,6 +5,11 @@
 		 <strong><?php echo esc_html( 'Récapitulatif des appels et blâmes le ' . $day . '/' . $month . '/' . $year, 'call-manager' ); ?></strong>
 	 </div>
 	 <?php
+	 foreach ( $data_users as $data ) {
+			 $user_id = $data->ID;
+			 $nom_util = $data->display_name;
+			 ?>
+	 	<?php
 				$user_meta = get_user_meta( $user_id, 'imputation_' . $year . $month, true );
 		if ( '' === $user_meta ) {
 					$id_select = get_users( 'orderby=nicename&role=administrator&exclude=' . $user_id . '' );
@@ -18,14 +23,10 @@
 								'call' => 0,
 								'blame' => $ids,
 						);
-					}
+			}
 					update_user_meta( $user_id, 'imputation_' . $year . $month, $imputation );
 					$user_meta = get_user_meta( $user_id, 'imputation_' . $year . $month, true );
 					$total_call = $user_meta[ $day ]['call'];
-				}
-		foreach ( $data_users as $data ) {
-				$user_id = $data->ID;
-				$nom_util = $data->display_name;
-			 	?>
+		} ?>
 				<?php include( plugin_dir_path( __FILE__ ) . 'global-recap-child.php' ); ?>
 					<?php } ?>

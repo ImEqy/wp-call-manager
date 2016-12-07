@@ -44,7 +44,7 @@ for ( $d = 1; ;$d++ ) {
 					<span class="dashicons dashicons-phone"></span>
 					<span class="dashicons dashicons-businessman"></span>
 					<br>
-					<span><?php echo esc_html( $total_call ) ?></span> | <span><?php echo esc_html( $total_blame ) ?></span>
+					<span><?php echo esc_html( $total_date ) ?></span> | <span><?php echo esc_html( $total_blame ) ?></span>
 			</div>
 					</div>
 <?php } ?>
