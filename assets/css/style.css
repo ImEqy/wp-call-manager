@@ -24,7 +24,8 @@
 }
 .rTable {
 			  	display: flex;
-			  	width: 75%;
+			  	width: 100%;
+
 
 			}
 			.rTableHeading, .rTableBody, .rTableFoot, .rTableRow{
