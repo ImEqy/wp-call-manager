@@ -1,0 +1,24 @@
+﻿#wpadminbar #wp-admin-bar-imputation_tel .ab-icon:before{
+	content: "\f525";
+	top: 3px;
+}
+
+#wpadminbar #wp-admin-bar-imputation .ab-icon:before{
+	content: "\f338";
+	top: 3px;
+}
+
+#wpadminbar #wp-admin-bar-imputation_recall .ab-icon:before{
+	content: "\f227";
+	top: 3px;
+}
+
+#wpadminbar #wp-admin-bar-imputation_will_recall .ab-icon:before{
+	content: "\f227";
+	top: 3px;
+}
+
+#wpadminbar #wp-admin-bar-imputation_tel_moins .ab-icon:before{
+	content: "\f460";
+	top: 3px;
+}
